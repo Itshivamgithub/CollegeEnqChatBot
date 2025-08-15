@@ -1,0 +1,81 @@
+/* Reset default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Main container */
+.chat-container {
+    width: 100%;
+    height: 100vh;
+    background: #222831; /* Dark background */
+    display: flex;
+    flex-direction: column;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Chat messages area */
+.chat-messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+    background: #31363F; /* Secondary dark background */
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Message bubbles */
+.message {
+    max-width: 80%;
+    padding: 12px 18px;
+    border-radius: 15px;
+    color: #EEEEEE;
+}
+
+/* User messages (right side) */
+.user-message {
+    background: #2D4059; /* Dark blue */
+    align-self: flex-end;
+    border-radius: 15px 15px 0 15px;
+}
+
+/* Bot messages (left side) */
+.bot-message {
+    background: #404B5E; /* Dark gray */
+    align-self: flex-start;
+    border-radius: 15px 15px 15px 0;
+}
+
+/* Input area */
+.input-container {
+    padding: 15px;
+    background: #31363F; /* Dark background */
+    display: flex;
+    gap: 10px;
+}
+
+#user-input {
+    flex: 1;
+    padding: 12px 18px;
+    border: none;
+    border-radius: 25px;
+    background: #222831; /* Dark input field */
+    color: #EEEEEE;
+    font-size: 16px;
+}
+
+#send-btn {
+    background: #8296D0; /* Accent color */
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#send-btn:hover {
+    background: #6B7FB0; /* Darker accent */
+}
